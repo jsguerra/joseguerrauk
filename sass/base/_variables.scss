@@ -1,0 +1,14 @@
+// Brand Colours
+$primary-color:   #8e44ad;
+$secondary-color: #ecf0f1;
+$tertiary-color:  #34495e;
+
+$off-white:       lighten($secondary-color, 3%);
+$text-color:      #333333;
+
+// Base typography
+$header-font:      Verdana, sans-serif;
+$body-font:        Georgia, serif;
+$root-font-size:   23px;
+$mobile-font-size: 15px;
+$line-height:      1.5;
