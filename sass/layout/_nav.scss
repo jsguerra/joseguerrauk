@@ -1,21 +1,52 @@
 .hero {
     background-color: $primary-color;
     color: white;
+    padding-bottom: 2em;
+    
     .navbar {
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
         padding: 0 1em;
+        
         ul {
             display: flex;
             flex-flow: row nowrap;
             list-style-type: none;
+            font-size: 0.8em;
+            margin: 0;
+        }
+        
+        h1 {
+            font-size: 1em;
+            color: white;
+            margin: 0;
+            align-self: center;
+        }
+        
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: #fff;
+            display: block;
+            padding: 10px;
         }
     }
-    h1 {
-        font-size: 1.1em;
-        color: white;
-        margin: 0;
-        align-self: center;
+    
+    .hero-title {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto;
+        text-align: center;
+        
+        h1 {
+            font-size: 2.5em;
+            color: white;
+            margin: 0;
+        }
+        
+        .lead-text {
+            margin: 0;
+        }
     }
 }
