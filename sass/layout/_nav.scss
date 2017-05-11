@@ -4,14 +4,16 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    min-height: 50px;
     padding: 0 1em;
 
     ul {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         list-style-type: none;
         font-size: 1em;
         margin: 0;
+        align-self: center;
     }
 
     h1 {
