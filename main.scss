@@ -1,14 +1,11 @@
+/* Vendors            */
+//@import "assets/sass/vendors/vendors"
+
 /* Base            */
-@import "sass/base/variables";
-@import "sass/base/normalize";
-@import "sass/base/base";
-@import "sass/base/form";
-@import "sass/base/typography";
+@import "assets/sass/base/base";
 
 /* Layout          */
-@import "sass/layout/nav";
-@import "sass/layout/main";
-@import "sass/layout/footer";
+@import "assets/sass/layout/layout"
 
 /* Modules         */
 /* State           */
