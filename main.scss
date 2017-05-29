@@ -1,12 +1,8 @@
-/* Vendors            */
-@import "assets/sass/vendors/vendors";
+/* Vendor            */
+@import "sass/vendor/vendor";
 
-/* Base            */
-@import "assets/sass/base/base";
+/* Partials          */
+@import "sass/partials/partials";
 
-/* Layout          */
-@import "assets/sass/layout/layout"
-
-/* Modules         */
-/* State           */
-/* Theme           */
+/* Modules           */
+@import "sass/modules/modules"
