@@ -1,0 +1,11 @@
+nav {
+    background-color: $brand-color;
+    color: white;
+    padding: 20px;
+    
+    .navigation {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,16 @@
+// Colour Palette
+$brand-color: #8e44ad;
+$brand-color-light: lighten($brand-color, 10%);
+$brand-color-dark: darken($brand-color, 10%);
+$brand-color-alt: #2c3e50;
+$brand-color-alt-light: lighten($brand-color-alt, 10%);
+$brand-color-alt-dark: darken($brand-color-alt, 10%);
+
+$background-color: #ecf0f1;
+$headings-color: #333333;
+$text-color: #383838;
+$link-color: $brand-color;
+
+// Font defaults
+$font-family-base: Georgia, serif;
+$font-family-headings: Arial, sans-serif;
