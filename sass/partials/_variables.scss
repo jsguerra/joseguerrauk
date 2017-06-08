@@ -1,16 +1,44 @@
 // Colour Palette
-$brand-color: #8e44ad;
-$brand-color-light: lighten($brand-color, 10%);
-$brand-color-dark: darken($brand-color, 10%);
-$brand-color-alt: #2c3e50;
-$brand-color-alt-light: lighten($brand-color-alt, 10%);
-$brand-color-alt-dark: darken($brand-color-alt, 10%);
+$brand-color            : #8e44ad; // Wisteria
+$brand-color-light      : lighten($brand-color, 10%);
+$brand-color-dark       : darken($brand-color, 10%);
+$brand-color-alt        : #2c3e50; // Midnight Blue
+$brand-color-alt-light  : lighten($brand-color-alt, 10%);
+$brand-color-alt-dark   : darken($brand-color-alt, 10%);
 
-$background-color: #ecf0f1;
-$headings-color: #333333;
-$text-color: #383838;
-$link-color: $brand-color;
+$background-color       : #ecf0f1; // Clouds
 
-// Font defaults
-$font-family-base: Georgia, serif;
-$font-family-headings: Arial, sans-serif;
+// Font Family
+$font-family            : Georgia, serif;
+$font-family-headings   : Verdana, Geneva, sans-serif;
+
+// Base Font for HTML
+$base-font-size         : 16px;
+
+// Paragraph Styles
+$paragraph-color        : #383838;
+$paragraph-size         : 1.063rem; // 17px
+$paragraph-line-height  : 1.5em;
+$paragraph-margin       : 20px;
+
+// Header Styles
+$header-color           : #333333;
+$header-size            : 2.5rem; // 40px
+$header-line-height     : 1.25em;
+$header-margin          : $paragraph-margin * 1.2;
+
+// Blockquote Styles
+$blockquote-color       : #505050;
+$blockquote-size        : rem(23px);
+$blockquote-line-height : 1.5em;
+$blockquote-margin      : $paragraph-margin * 1.5;
+
+// Links
+$link-color             : #4eaff6;
+
+// hr
+$hr-margin              : 30px;
+
+// Type Misc
+$font-weight-bold       : 800;
+$border-color           : #DADADA;

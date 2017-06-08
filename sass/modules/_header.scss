@@ -1,4 +1,13 @@
 .site-banner {
     padding: 20px;
     text-align: center;
+    
+    .site-banner-title {
+        margin-bottom: 0;
+    }
+    
+    .lead-text {
+        font-size: 1.3rem;
+        color: lighten($paragraph-color, 20%);
+    }
 }
