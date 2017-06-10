@@ -783,9 +783,11 @@ main {
   background-size: cover;
   height: 400px;
   box-sizing: border-box;
-  position: relative; }
-  .item:hover .text {
-    display: none; }
+  position: relative;
+  overflow: hidden; }
+  .item:hover .bg-image {
+    transform: scale(1.1);
+    transition: 1s ease; }
   .item .item-header {
     position: relative;
     width: 100%;
@@ -799,11 +801,21 @@ main {
       top: 5%;
       left: 5%;
       z-index: 10; }
-      .item .item-header .text:hover {
-        display: none; }
       .item .item-header .text h2 {
         color: white;
         margin: 10px 0 0 0; }
+    .item .item-header .bg-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      z-index: -1; }
     .item .item-header .overlay {
       position: absolute;
       top: 0;
@@ -816,8 +828,6 @@ main {
       background: -moz-linear-gradient(rgba(0, 0, 0, 0.75), transparent);
       background: linear-gradient(rgba(0, 0, 0, 0.75), transparent);
       z-index: 5; }
-      .item .item-header .overlay:hover {
-        background: transparent; }
 
 footer {
   background-color: #2c3e50;

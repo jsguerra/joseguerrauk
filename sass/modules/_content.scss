@@ -11,9 +11,11 @@ main {
     height: 400px;
     box-sizing: border-box;
     position: relative;
+    overflow: hidden;
     
-    &:hover .text {
-        display: none;
+    &:hover .bg-image {
+        transform: scale(1.1);
+        transition: 1s ease;
     }
     
     .item-header {
@@ -32,15 +34,25 @@ main {
             top: 5%;
             left: 5%;
             z-index: 10;
-            
-            &:hover {
-                display: none;
-            }
 
             h2 {
                 color: white;
                 margin: 10px 0 0 0;
             }
+        }
+        
+        .bg-image {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            z-index: -1;
         }
         
         .overlay {
@@ -55,10 +67,6 @@ main {
             background: -moz-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0));
             background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0));
             z-index: 5;
-            
-            &:hover {
-                background: transparent;
-            }
         }
     }
 }
