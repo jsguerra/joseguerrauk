@@ -1,7 +1,7 @@
 // Make type normal across browsers
 *, html, body {
     font-size: $base-font-size;
-    font-family: $font-family;
+    font-family: $serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
@@ -9,6 +9,7 @@
 }
 
 body {
-    background-color: $background-color;
+    background-color: white;
     color: $paragraph-color;
+    line-height: 1.5;
 }

@@ -6,3 +6,11 @@
          -o-transition: $args;
             transition: $args;
 }
+
+// Add font icons
+@mixin font-icon {
+  font-family: icomoon;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

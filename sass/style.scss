@@ -1,8 +1,19 @@
 /* Vendor            */
-@import "vendor/vendor";
+@import "vendor/normalize";
 
 /* Partials          */
-@import "partials/partials";
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/base';
+@import 'partials/typography';
+@import 'partials/fonts';
+@import 'partials/navigation';
+@import 'partials/figures';
+@import 'partials/tables';
+@import 'partials/buttons';
 
 /* Modules           */
-@import "modules/modules";
+@import 'modules/header';
+@import 'modules/content';
+@import 'modules/footer';
+@import 'modules/home';
