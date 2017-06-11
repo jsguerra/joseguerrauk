@@ -1,7 +1,70 @@
 footer {
     background-color: $midnight-blue;
     color: white;
-    text-align: center;
     overflow: auto;
-    margin-top: 60px;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    
+    .container-footer {
+        @extend .container;
+        @include row();
+        
+        .footer-colophon {
+            @include col(1, 2, $first: true);
+        }
+        
+        .footer-links {
+            @include col(1, 2, $last: true);
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    float: left;
+                    position: relative;
+                    margin-top: 0;
+                    padding-right: 0.5em;
+                    
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    .footer-links-inner {
+        @include row();
+        text-align: right;
+        
+        .footer-submenu {
+            @include col(1, 2, $first: true);
+            width: auto!important;
+            margin-right: 1em!important;
+        }
+        
+        .footer-social {
+            @include col(1, 2, $last: true);
+            width: auto!important;
+            
+            a {
+                color: black;
+            }
+        }
+    }
+    
+    .icon {
+        background-color: white;
+        padding: 4px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        border-radius: 50px;
+        font-size: 12px;
+        
+        &:hover {
+            background-color: $link-color;
+        }
+    }
 }
