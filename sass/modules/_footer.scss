@@ -11,6 +11,10 @@ footer {
         
         .footer-colophon {
             @include col(1, 2, $first: true);
+            
+            .copy {
+                margin-left: 1em;
+            }
         }
         
         .footer-links {
@@ -48,6 +52,7 @@ footer {
         .footer-social {
             @include col(1, 2, $last: true);
             width: auto!important;
+            margin-right: 1em!important;
             
             a {
                 color: black;
@@ -66,5 +71,16 @@ footer {
         &:hover {
             background-color: $link-color;
         }
+    }
+}
+
+@media screen and (max-width: $phone) {
+    .footer-colophon {
+        text-align: center;
+    }
+    
+    .footer-links-inner {
+        text-align: center!important;
+        margin-top: 10px;
     }
 }
